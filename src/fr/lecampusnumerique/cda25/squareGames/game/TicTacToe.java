@@ -8,15 +8,19 @@ import fr.lecampusnumerique.cda25.squareGames.utils.Validator;
 import fr.lecampusnumerique.cda25.squareGames.utils.View;
 
 public class TicTacToe implements GameInterface{
+    private Validator validator = new Validator();
+    private Board board = new Board(3,3);
 
     public void play(){
-        Validator validator = new Validator();
         View.getInstance().displayWelcomeMessage();
+
         String modeChoice = "";
         while(!validator.isValidChoice(modeChoice)){
             View.getInstance().displayChoiceMode();
             modeChoice = UserInteract.getInstance().getUserInput();
         }
+        View.getInstance().displayBoard(3, board );
+
     }
     public boolean isOver(){return true;}
 

@@ -1,11 +1,11 @@
 package fr.lecampusnumerique.cda25.squareGames.cell;
 
 public interface CellInterface {
-    Symbol getSymbol();
+    SymbolInterface getSymbol();
 
     String getRepresentation();
 
     boolean isOccupied();
 
-    void occupyCell(Symbol symbol);
+    void occupyCell(SymbolInterface symbol);
 }

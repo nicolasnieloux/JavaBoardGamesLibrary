@@ -1,23 +1,25 @@
 package fr.lecampusnumerique.cda25.squareGames.cell;
 
-public class Cell implements CellInterface{
-    @Override
-    public Symbol getSymbol() {
-        return null;
-    }
+public abstract class Cell implements CellInterface{
 
+    private SymbolInterface symbol;
+
+    // Protected so that the children have to define the function and choose
+    protected Cell(SymbolInterface symbol){
+        this.symbol = symbol;
+    }
     @Override
-    public String getRepresentation() {
-        return null;
+    public SymbolInterface getSymbol() {
+        return this.symbol;
     }
 
     @Override
     public boolean isOccupied() {
-        return false;
+        return !symbol.isDefault();
     }
 
     @Override
-    public void occupyCell(Symbol symbol) {
-
+    public void occupyCell(SymbolInterface symbol) {
+        this.symbol = symbol;
     }
 }
