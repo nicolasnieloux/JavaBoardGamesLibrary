@@ -1,4 +1,4 @@
-package fr.lecampusnumerique.cda25.squareGames;
+package fr.lecampusnumerique.cda25.squareGames.player;
 
 public interface PlayerInterface {
     String getName();

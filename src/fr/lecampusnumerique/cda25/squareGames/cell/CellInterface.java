@@ -1,4 +1,4 @@
-package fr.lecampusnumerique.cda25.squareGames;
+package fr.lecampusnumerique.cda25.squareGames.cell;
 
 public interface CellInterface {
     Symbol getSymbol();
