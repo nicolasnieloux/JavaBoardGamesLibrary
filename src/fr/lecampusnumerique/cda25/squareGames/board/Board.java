@@ -6,11 +6,12 @@ import fr.lecampusnumerique.cda25.squareGames.utils.Coordinate;
 
 import java.util.HashMap;
 
-public class Board implements BoardInterface{
+public class Board implements BoardInterface {
 
     private HashMap<Coordinate, Cell> board;
     int x;
     int y;
+
     public Board(int x, int y) {
         this.x = x;
         this.y = y;
@@ -19,16 +20,16 @@ public class Board implements BoardInterface{
     }
 
     public void initializeBoard(int x, int y) {
-        for (int i=1; i<y+1;i++ ){
-            for (int j=1; j<x+1;j++){
+        for (int i = 1; i < y + 1; i++) {
+            for (int j = 1; j < x + 1; j++) {
                 board.put(new Coordinate(i, j), new TicTacToeCell());
             }
         }
 
     }
 
-    public Cell getCellInPositionXY(int x, int y){
-        return board.get(new Coordinate(x,y));
+    public Cell getCellInPositionXY(int x, int y) {
+        return board.get(new Coordinate(x, y));
     }
 
     public int getX() {

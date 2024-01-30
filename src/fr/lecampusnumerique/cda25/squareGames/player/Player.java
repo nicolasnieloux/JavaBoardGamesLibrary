@@ -2,7 +2,7 @@ package fr.lecampusnumerique.cda25.squareGames.player;
 
 import fr.lecampusnumerique.cda25.squareGames.cell.Symbol;
 
-public abstract class Player {
+public abstract class Player implements PlayerInterface {
 
     // Attributs
     private Symbol symbol;
@@ -20,5 +20,4 @@ public abstract class Player {
             throw new IllegalArgumentException("La représentation doit être \"| X\" ou \"| O\"");
         }
     }
-
 }
