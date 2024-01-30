@@ -2,7 +2,6 @@ package fr.lecampusnumerique.cda25.squareGames.game;
 
 import fr.lecampusnumerique.cda25.squareGames.board.Board;
 import fr.lecampusnumerique.cda25.squareGames.cell.Symbol;
-import fr.lecampusnumerique.cda25.squareGames.cell.TicTacToeSymbol;
 import fr.lecampusnumerique.cda25.squareGames.player.AIPlayer;
 import fr.lecampusnumerique.cda25.squareGames.player.HumanPlayer;
 import fr.lecampusnumerique.cda25.squareGames.player.Player;

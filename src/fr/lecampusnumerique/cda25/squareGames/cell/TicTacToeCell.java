@@ -2,7 +2,7 @@ package fr.lecampusnumerique.cda25.squareGames.cell;
 
 public class TicTacToeCell extends Cell{
     public TicTacToeCell() {
-        super(TicTacToeSymbol.DEFAULT);
+        super(Symbol.DEFAULT);
     }
 
     @Override
