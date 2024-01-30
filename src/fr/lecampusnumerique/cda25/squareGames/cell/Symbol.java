@@ -4,7 +4,9 @@ public enum Symbol implements SymbolInterface {
     DEFAULT(" ", true),
     X("X",true),
     Y("Y",true),
-;
+    O("O", true),
+    R("R", true),
+    B("B", true);
     private String representation;
     private boolean isDefault;
 
