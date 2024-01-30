@@ -14,10 +14,11 @@ public abstract class Player implements PlayerInterface {
      * @throws IllegalArgumentException If the symbol is not "X" or "O".
      */
     public Player(Symbol symbol) {
-        if (symbol.equals("X") || symbol.equals("O")) {
-            this.symbol = Symbol.valueOf("|  " + symbol);
+
+        if (symbol.getRepresentation().equals("X") || symbol.getRepresentation().equals("Y")) {
+            this.symbol = symbol;
         } else {
-            throw new IllegalArgumentException("La représentation doit être \"| X\" ou \"| O\"");
+            throw new IllegalArgumentException("La représentation doit être \"| X\" ou \"| Y\"");
         }
     }
 }

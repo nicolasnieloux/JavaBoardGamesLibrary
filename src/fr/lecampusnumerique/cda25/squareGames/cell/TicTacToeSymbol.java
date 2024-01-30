@@ -1,13 +1,13 @@
 package fr.lecampusnumerique.cda25.squareGames.cell;
 
-public enum TictacToeSymbol implements SymbolInterface{
+public enum TicTacToeSymbol implements SymbolInterface{
     DEFAULT(" ", true),
     X("X",true),
     O("O",true),
 ;
 
 
-    TictacToeSymbol(String representation, boolean isDefault) {
+    TicTacToeSymbol(String representation, boolean isDefault) {
         this.isDefault = isDefault;
         this.representation = representation;
     }
